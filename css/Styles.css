@@ -1,0 +1,298 @@
+/* ------------------------------ */
+/* Estilo Global */
+/* ------------------------------ */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ------------------------------ */
+/* Navbar */
+/* ------------------------------ */
+
+.navbar {
+    background: linear-gradient(135deg, #2e7d32, #ffca28);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-height: 55px;
+}
+
+.navbar-nav .nav-link,
+.navbar .dropdown-toggle {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar .dropdown-toggle:hover {
+    color: #ffd54f !important;
+}
+
+/* Botones en navbar */
+.btn-outline-success {
+    border-color: #2e7d32;
+    color: #2e7d32;
+}
+
+.btn-outline-success:hover {
+    background-color: #2e7d32;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #c62828;
+    border-color: #ef9a9a;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #ef9a9a;
+    color: #2e7d32;
+}
+
+/* ------------------------------ */
+/* Sección de Bienvenida */
+/* ------------------------------ */
+
+.bienvenida-section {
+    background-color: #e8f5e9;
+    border-top: 5px solid #ffca28;
+    border-bottom: 5px solid #2e7d32;
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.main-subtitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* ------------------------------ */
+/* Botones generales */
+/* ------------------------------ */
+
+.btn-success {
+    background-color: #2e7d32;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background-color: #1b5e20;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------ */
+/* Dropdown */
+/* ------------------------------ */
+
+.dropdown-menu {
+    background-color: #fffde7;
+    border: 1px solid #ffca28;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #2e7d32;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ffca28;
+    color: #fff;
+}
+
+/* ------------------------------ */
+/* Textos destacados */
+/* ------------------------------ */
+
+.text-success {
+    color: #2e7d32 !important;
+}
+
+.text-danger {
+    color: #c62828 !important;
+}
+
+/* ------------------------------ */
+/* Espaciados y Tipografía */
+/* ------------------------------ */
+
+.lead {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.mx-2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* ------------------------------ */
+/* Estilo del Registro */
+/* ------------------------------ */
+
+.card,
+.tarjeta-registro {
+    border-radius: 10px;
+    border: 2px solid #ffca28;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header h3 {
+    font-weight: 700;
+}
+
+.encabezado-degradado {
+    background: linear-gradient(to right, #2e7d32, #ffca28);
+    padding: 1.25rem 1.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.subtitulo-registro {
+    font-size: 0.95rem;
+    color: #fffde7;
+}
+
+.fondo-registro {
+    background-color: #fffde7;
+    padding: 2rem;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Inputs y Selects */
+
+input.form-control,
+select.form-select {
+    border: 1px solid #ffca28;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+input.form-control:focus,
+select.form-select:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+}
+
+select.form-select {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+select.form-select option {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #333;
+}
+
+select.form-select optgroup {
+    background-color: #e8f5e9;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+/* ------------------------------ */
+/* Grupo de radio (planes) */
+/* ------------------------------ */
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.plan-opcion {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.plan-opcion:hover {
+    transform: scale(1.03);
+}
+
+.plan-opcion input[type="radio"] {
+    display: none;
+}
+
+.plan-opcion img {
+    border: 3px solid transparent;
+    margin: 3%;
+    border-radius: 10px;
+    width: 95%;
+    object-fit: cover;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.plan-opcion input[type="radio"]:checked + img {
+    border-color: #2e7d32;
+    box-shadow: 0 0 12px rgba(46, 125, 50, 0.5);
+    transform: scale(1.02);
+}
+
+/* ------------------------------ */
+/* Animaciones y detalles */
+/* ------------------------------ */
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes expandir {
+    from { opacity: 0; transform: scaleY(0.95); }
+    to { opacity: 1; transform: scaleY(1); }
+}
+
+.animar-entrada {
+    animation: fadeInUp 1s ease;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+details summary {
+    user-select: none;
+}
+
+details summary::after {
+    content: "▼";
+    float: right;
+    color: #2e7d32;
+}
+
+details[open] summary::after {
+    content: "▲";
+    color: #ffca28;
+}
+
+details[open] > .contenido-animado {
+    animation: expandir 0.3s ease-in-out;
+}
+
+.contenido-animado {
+    overflow: hidden;
+}
